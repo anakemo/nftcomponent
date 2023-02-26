@@ -1,11 +1,10 @@
 .App {
+  padding: 0;
   text-align: center;
+  background-color: hsl(217, 54%, 11%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,15 +12,53 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.hoverImgWraper{
+  cursor: pointer;
+  width: 405px;
+  height: 405px;
+  border-radius:15px;
+
+  background-image: linear-gradient(
+  to right bottom,
+   rgba(93, 153, 227, 0.648),
+   rgba(15, 44, 205, 0.8)),
+   url(./images/image-equilibrium.jpg),
+   url(./images/icon-view.svg);
+
+  background-size: cover;
+  background-position: top;
+
+}
+.hovText:hover{
+  color:#61dafb;
+  cursor: pointer;
+}
+
+.autText{
+  color:white;
+  display: inline-block;
+}
+.autText:hover{
+  color:#61dafb;
+  cursor: pointer;
+}
+
+
+
+.codecomp{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 90px;
+  color: #00FFF8;
+}
+.datecomp{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 90px;
+  color: #00FFF8;
 }
 
 .App-link {
