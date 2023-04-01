@@ -1,6 +1,6 @@
 import { Avatar } from '@mui/material'
 import React from 'react'
-import '../App.css'
+
 
 
 export const AuthorComponent = (props) => {
